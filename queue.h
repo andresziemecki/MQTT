@@ -28,7 +28,6 @@ class cola
 			lock.unlock();
 			cond_var_get.notify_one();
 		}
-
 		void pop(T *t)
 		{
 			unique_lock<mutex>lock(m);

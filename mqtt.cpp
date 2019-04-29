@@ -92,7 +92,6 @@ class PublishMsg : public Message {
         TopicName getTopic() const{return topic;}
         TopicValue getValue() const {return value;}
         bool getRetain() const {return retain;}
-
 };
 
 class SubscribeMsg : public Message {
